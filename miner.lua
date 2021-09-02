@@ -40,7 +40,7 @@ r.forward()
 r.turnLeft()
 r.swingUp()
 r.swingDown()
-for i=1,99 do 
+for i=1,far do 
 r.swing()
 r.forward()
 r.swingUp()
@@ -54,7 +54,7 @@ r.swingUp()
 r.swingDown()
 r.turnRight()
     
-for i=1,99 do 
+for i=1,far do 
 r.swing()
 r.forward()
 r.swingUp()
