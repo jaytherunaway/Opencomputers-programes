@@ -4,6 +4,7 @@ local far = 10 --change number to amount of block wanted--
 --bots name--
 local Name = "new bot" --change bot name for broadcast needs " on each side--
 --broadcast channel--
+--this has not yet bin add to the code will add soon--
 local CC = 123 -- change broadcast channel need at least 3 numbers EXP:123,321,423,111--
 --Do Not Change Under This Line--
 --VARABLES--
