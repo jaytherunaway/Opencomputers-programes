@@ -118,8 +118,7 @@ r.turnAround()
 os.execute("check")
 else
 print("not enought space to empty")
-m.broadcast(123, "Error", Name)
-print("RUN (clearinventory)")
-
+print("will clear the rest next time")
+m.broadcast(123, name, "not enought space to empty will clear the rest next time")
 end
 end
