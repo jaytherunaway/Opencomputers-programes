@@ -1,0 +1,2 @@
+--Copy and paste this in to open computers pc with inter net card--
+wget -f https://github.com/jaytherunaway/Opencomputers-robot-miner/raw/main/check.lua
