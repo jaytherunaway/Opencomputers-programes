@@ -4,8 +4,7 @@ local far = 10 --change number to amount of block wanted--ONLY CHANGE (10)--
   --bots name--
 local Name = "new bot" --change bot name for broadcast needs " on each side--ONLY CHANGE (new bot)--
   --broadcast channel--
---NOT YET SET UP--
---local CC = 123 -- change broadcast channel need at least 3 numbers--ONLY CHANGE (123)
+local CC = 123 -- change broadcast channel need at least 3 numbers--ONLY CHANGE (123)
     --END OF ROBOT SETTINGS--
 
 
@@ -35,13 +34,13 @@ local CountDown = 10
 while(1 <= 2) do
 --look for start block--
 print("looking for next strip")
-m.broadcast(123, "looking for next strip", Name)
+m.broadcast(CC, "looking for next strip", Name)
 while(r.detect() == false) do
 r.forward()
 end
 os.execute(clear)
 print("found next strip")
-m.broadcast(123, "found next strip", Name)
+m.broadcast(CC, "found next strip", Name)
 
     --mine strip--
 r.swing()
@@ -68,13 +67,13 @@ r.swingUp()
 r.swingDown()
 end  
 r.turnRight()
-m.broadcast(123, "headed home", Name)
+m.broadcast(CC, "headed home", Name)
 
     --return home--
 while(r.detect() == false) do 
  r.forward()
 end
-m.broadcast(123, "clearing inventory in 10sec", Name)
+m.broadcast(CC, "clearing inventory in 10sec", Name)
     
     --empty invetory--
 os.execute("clear")
@@ -111,7 +110,7 @@ end
 end
 if RNOS == RSIU then 
 print("im empty")
-m.broadcast(123, "Inventory Empty restart in 10sec", Name)
+m.broadcast(CC, "Inventory Empty restart in 10sec", Name)
 r.select(1)
 os.execute("clear")
 for i=1,CountDown do
@@ -125,6 +124,6 @@ os.execute("check")
 else
 print("not enought space to empty")
 print("will clear the rest next time")
-m.broadcast(123, name, "not enought space to empty will clear the rest next time")
+m.broadcast(CC, name, "not enought space to empty will clear the rest next time")
 end
 end
