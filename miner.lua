@@ -1,12 +1,19 @@
---ROBOT SETTINGS--
---blocks pre strip--
-local far = 10 --change number to amount of block wanted--
---bots name--
-local Name = "new bot" --change bot name for broadcast needs " on each side--
---broadcast channel--
-local CC = 123 -- change broadcast channel need at least 3 numbers EXP:123,321,423,111--
---Do Not Change Under This Line--
---VARABLES--
+    --ROBOT SETTINGS--
+  --blocks pre strip--
+local far = 10 --change number to amount of block wanted--ONLY CHANGE (10)--
+  --bots name--
+local Name = "new bot" --change bot name for broadcast needs " on each side--ONLY CHANGE (new bot)--
+  --broadcast channel--
+--NOT YET SET UP--
+--local CC = 123 -- change broadcast channel need at least 3 numbers--ONLY CHANGE (123)
+    --END OF ROBOT SETTINGS--
+
+
+
+
+--DO NOT CHANGE UNDER THIS LINE--
+
+    --VARABLES--
 local r = require("robot")
 local component = require("component")
 local d = r.detect()
@@ -19,10 +26,13 @@ local RNOS = r.inventorySize()
 local ISIU = 1
 local RSIU = r.select()
 local CountDown = 10
-local loop = 1
---CODE--
---code loop--
-while(loop <= 2) do
+
+      --CODE--
+
+    --Item Precheck--
+
+    --LOOPED CODE--
+while(1 <= 2) do
 --look for start block--
 print("looking for next strip")
 m.broadcast(123, "looking for next strip", Name)
@@ -33,7 +43,7 @@ os.execute(clear)
 print("found next strip")
 m.broadcast(123, "found next strip", Name)
 
---mine strip--
+    --mine strip--
 r.swing()
 r.forward()
 r.turnLeft()
@@ -44,32 +54,29 @@ r.swing()
 r.forward()
 r.swingUp()
 r.swingDown()
-
 end
 r.turnRight()
 r.swing()
 r.forward()
 r.swingUp()
 r.swingDown()
-r.turnRight()
-    
+r.turnRight()   
 for i=1,far do 
 r.swing()
 r.forward()
 r.swingUp()
 r.swingDown()
-
 end  
 r.turnRight()
 m.broadcast(123, "headed home", Name)
 
---return home--
+    --return home--
 while(r.detect() == false) do 
  r.forward()
 end
 m.broadcast(123, "clearing inventory in 10sec", Name)
-
---empty invetory--
+    
+    --empty invetory--
 os.execute("clear")
 print ("getting number of slots")
 print ("pls wait")
@@ -89,13 +96,12 @@ print (CountDown)
 os.sleep(1)
 os.execute("clear")
 CountDown = CountDown - 1
-   end
+end
 CountDown = 10
 ISIU = 1
 RSIU = 1
 for i=1,inventory.getInventorySize(3) do
 if RSIU == RNOS then
-
 else
 inventory.dropIntoSlot(3,ISIU)
 ISIU = ISIU + 1
