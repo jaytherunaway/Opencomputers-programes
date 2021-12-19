@@ -1,6 +1,6 @@
     --ROBOT SETTINGS--
   --blocks pre strip--
-local far = 10 --change number to amount of block wanted--ONLY CHANGE (10)--
+local far = 100 --change number to amount of block wanted--ONLY CHANGE (10)--
   --bots name--
 local Name = "new bot" --change bot name for broadcast needs " on each side--ONLY CHANGE (new bot)--
   --broadcast channel--
