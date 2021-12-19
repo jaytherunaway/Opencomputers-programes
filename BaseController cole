@@ -1,1 +1,22 @@
-
+local component = require("component")
+local event = require("event")
+local m = component.modem
+while(1 <= 2) do
+os.execute("clear")
+print("------------------------")
+print("Base controller 0.1")
+print("------------------------")
+print("")
+print("")
+print("Type A Command")
+print("Press Enter")
+print("")
+m.open(123)
+m.broadcast(123, io.read(), "cole")
+os.execute("clear")
+print("Sending Command...")
+os.sleep(2)
+os.execute("clear")
+print("Command Sent")
+os.sleep(1)
+end
