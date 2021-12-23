@@ -1,6 +1,7 @@
 local component = require("component")
 local event = require("event")
 local m = component.modem
+local message = io.read()
 while(1 <= 2) do
 os.execute("clear")
 print("------------------------")
@@ -12,8 +13,13 @@ print("Type A Command")
 print("Press Enter")
 print("")
 m.open(123)
-m.broadcast(123, io.read(), "Player")
+m.broadcast(123, message, "Player")
 os.execute("clear")
+if message == close then
+
+elseif message == "drone" then
+os.execute("DC")
+
 print("Sending Command...")
 os.sleep(2)
 os.execute("clear")
