@@ -1,8 +1,5 @@
 Auto Miner
 wget -f https://github.com/jaytherunaway/Opencomputers-robot-miner/raw/main/miner.lua
 
-Cole Base Controller 
-wget -f https://github.com/jaytherunaway/Opencomputers-programes/raw/main/BaseControllercole
-
 Jay Base Controller
-https://github.com/jaytherunaway/Opencomputers-programes/raw/main/BaseController%20jay
+wget -f https://github.com/jaytherunaway/Opencomputers-programes/raw/main/BaseController%20jay
