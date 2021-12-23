@@ -1,0 +1,28 @@
+local component = require("component")
+local event = require("event")
+local modem = component.modem
+os.execute("clear")
+while true do
+os.execute("clear")
+print("------------------------")
+print("Drone controller 0.1")
+print("------------------------")
+print("")
+print("")
+print("Type A Command")
+print("Press Enter")
+print("------------------------")
+print("Commands")
+print("------------------------")
+print("drone.move(0,0,0)")
+print("drone.fill(down)")
+print("drone.drain(down)")
+print("------------------------")
+print("")
+modem.open(2412)
+modem.broadcast(2412, "drone=component.proxy(component.list('drone')())")
+  local cmd=io.read()
+  if not cmd then return end
+  modem.broadcast(2412, cmd)
+  print(select(6, event.pull(5, "modem_message")))
+end
