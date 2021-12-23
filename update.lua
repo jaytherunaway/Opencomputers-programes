@@ -1,3 +1,5 @@
+os.execute("del BaseController")
+os.execute("del DC")
 print("getting BaseController")
 os.execute("wget -f -r https://github.com/jaytherunaway/Opencomputers-programes/raw/main/BaseController")
 print("")
