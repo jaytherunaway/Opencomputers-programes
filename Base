@@ -27,6 +27,9 @@ os.execute("DC")
 elseif message == "list" then
 os.execute("CL")
 
+elseif message == "update" then
+os.execute("update")
+
 else
 
 end
