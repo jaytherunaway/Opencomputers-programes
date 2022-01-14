@@ -7,7 +7,7 @@ print("")
 print("getting DroneController")
 os.execute("wget -f -r https://github.com/jaytherunaway/Opencomputers-programes/raw/main/DC")
 print("getting Commands List")
-os.execute("wget -f -r ")
+os.execute("wget -f -r https://github.com/jaytherunaway/Opencomputers-programes/raw/main/CL")
 
 print("Updating...")
 os.sleep(5)
