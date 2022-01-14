@@ -32,6 +32,10 @@ elseif message == "update" then
 os.execute("clear")
 os.execute("update")
 
+elseif message == "fix" then
+os.execute("clear")
+os.execute("fix")
+
 else
 
 end
