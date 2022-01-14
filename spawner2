@@ -43,7 +43,7 @@ rs.setOutput(sides.right,15)
 rs.setOutput(sides.back,15)
 
 elseif message == "update" then
-os.execute("wget -f https://github.com/jaytherunaway/Opencomputers-programes/raw/main/spawner1")
+os.execute("wget -fhttps://github.com/jaytherunaway/Opencomputers-programes/raw/main/spawner2")
 else
 end
 os.execute("spawner2")
