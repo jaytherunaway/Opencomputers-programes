@@ -1,0 +1,6 @@
+print("Fixxing File")
+os.execute("del update")
+os.execute("wget https://github.com/jaythderunaway/Opencomputers-programes/raw/main/update")
+print("File Fixxed")
+os.sleep(3)
+os.execute("clear")
