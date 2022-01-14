@@ -3,7 +3,6 @@ local sides = require("sides")
 local rs = component.redstone
 local component = require("component")
 local m = component.modem -- get primary modem component
- while(1 <= 2) do 
 m.open(123)
 local event = require("event")
 local _, _, _, _, _, message = event.pull("modem_message")
@@ -38,7 +37,6 @@ rs.setOutput(sides.back,0)
 elseif message == "update" then
 os.execute("wget -f https://github.com/jaytherunaway/Opencomputers-programes/raw/main/spawner1")
 else
-
 end
-end
+os.execute("spawner1")
 
