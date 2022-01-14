@@ -1,4 +1,4 @@
-os.execute("del base")
+os.execute("del Base")
 os.execute("del DC")
 os.execute("del CL")
 print("getting BaseController")
