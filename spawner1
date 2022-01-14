@@ -2,14 +2,13 @@ local component = require("component")
 local sides = require("sides")
 local rs = component.redstone
 local component = require("component")
-local event = require("event")
 local m = component.modem -- get primary modem component
+ while(1 <= 2) do 
 m.open(123)
 local event = require("event")
 local _, _, _, _, _, message = event.pull("modem_message")
 print(message)
 m.close(123)
- while(1 <= 2) do 
 if message == "1" then
 rs.setOutput(sides.back,15)
 
