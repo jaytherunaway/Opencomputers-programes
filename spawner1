@@ -8,22 +8,22 @@ local event = require("event")
 local _, _, _, _, _, message = event.pull("modem_message")
 print(message)
 m.close(123)
-if message == "1" then
+if message == "witherskeleton" then
 rs.setOutput(sides.back,15)
 
-elseif message == "2" then
+elseif message == "sheep" then
 rs.setOutput(sides.right,15)
 
-elseif message == "3" then
+elseif message == "pinkslime" then
 rs.setOutput(sides.left,15)
 
-elseif message == "4" then
+elseif message == "enderman" then
 rs.setOutput(sides.bottom,15)
 
-elseif message == "5" then
+elseif message == "shulker" then
 rs.setOutput(sides.top,15)
 
-elseif message == "6" then
+elseif message == "zombie" then
 rs.setOutput(sides.front,15)
 
 elseif message == "off" then
