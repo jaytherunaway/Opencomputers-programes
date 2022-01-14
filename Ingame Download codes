@@ -2,4 +2,4 @@ Auto Miner
 wget -f https://github.com/jaytherunaway/Opencomputers-robot-miner/raw/main/miner.lua
 
 Base Controller
-https://github.com/jaytherunaway/Opencomputers-programes/raw/main/update
+wget -f https://github.com/jaytherunaway/Opencomputers-programes/raw/main/update
