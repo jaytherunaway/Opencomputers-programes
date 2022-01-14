@@ -11,7 +11,7 @@ os.execute("wget https://github.com/jaytherunaway/Opencomputers-programes/raw/ma
 os.sleep(3)
 os.execute("clear")
 
-rint("getting DroneController")
+print("getting DroneController")
 os.execute("wget https://github.com/jaytherunaway/Opencomputers-programes/raw/main/DC")
 os.sleep(3)
 os.execute("clear")
