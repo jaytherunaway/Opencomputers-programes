@@ -1,1 +1,45 @@
+local component = require("component")
+local sides = require("sides")
+local rs = component.redstone
+local component = require("component")
+local event = require("event")
+local m = component.modem -- get primary modem component
+m.open(123)
+local event = require("event")
+local _, _, _, _, _, message = event.pull("modem_message")
+print(message)
+m.close(123)
+ while(1 <= 2) do 
+if message == "1" then
+rs.setOutput(sides.back,15)
+
+elseif message == "2" then
+rs.setOutput(sides.right,15)
+
+elseif message == "3" then
+rs.setOutput(sides.left,15)
+
+elseif message == "4" then
+rs.setOutput(sides.bottom,15)
+
+elseif message == "5" then
+rs.setOutput(sides.top,15)
+
+elseif message == "6" then
+rs.setOutput(sides.front,15)
+
+elseif message == "off" then
+rs.setOutput(sides.front,0)
+rs.setOutput(sides.top,0)
+rs.setOutput(sides.bottom,0)
+rs.setOutput(sides.left,0)
+rs.setOutput(sides.right,0)
+rs.setOutput(sides.back,0)
+
+elseif message == "update" then
+
+else
+
+end
+end
 
