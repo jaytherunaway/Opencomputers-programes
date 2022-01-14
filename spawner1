@@ -34,7 +34,7 @@ rs.setOutput(sides.left,0)
 rs.setOutput(sides.right,0)
 rs.setOutput(sides.back,0)
 
-elseif message == "all on" then
+elseif message == "allon" then
 rs.setOutput(sides.front,15)
 rs.setOutput(sides.top,15)
 rs.setOutput(sides.bottom,15)
