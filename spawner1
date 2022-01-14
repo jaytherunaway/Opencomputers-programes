@@ -37,7 +37,7 @@ rs.setOutput(sides.right,0)
 rs.setOutput(sides.back,0)
 
 elseif message == "update" then
-
+https://github.com/jaytherunaway/Opencomputers-programes/raw/main/spawner%201
 else
 
 end
