@@ -1,11 +1,12 @@
 local component = require("component")
 local event = require("event")
 local m = component.modem
-local message = io.read()
-while(1 <= 2) do
 os.execute("clear")
 print("------------------------")
 print("Base controller 0.1")
+print("------------------------")
+print("For List Of Commands Type")
+print("list")
 print("------------------------")
 print("")
 print("")
@@ -13,17 +14,20 @@ print("Type A Command")
 print("Press Enter")
 print("")
 m.open(123)
-m.broadcast(123, message, "Player")
+local message = io.read()
+m.broadcast(123,message, "Player")
+if message == "close" then
 os.execute("clear")
-if message == close then
+os.exit()
 
 elseif message == "drone" then
+os.execute("clear")
 os.execute("DC")
 
-print("Sending Command...")
-os.sleep(2)
-os.execute("clear")
-print("Command Sent")
-os.sleep(1)
+elseif message == "list" then
+os.execute("CL")
+
+else
+
 end
-end
+os.execute("base")
