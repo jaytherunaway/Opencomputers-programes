@@ -46,4 +46,4 @@ elseif message == "update" then
 os.execute("wget -f https://github.com/jaytherunaway/Opencomputers-programes/raw/main/spawner1")
 else
 end
-os.execute("spawner1")
+os.execute("spawner2")
