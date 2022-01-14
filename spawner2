@@ -8,7 +8,7 @@ local event = require("event")
 local _, _, _, _, _, message = event.pull("modem_message")
 print(message)
 m.close(123)
-if message == "1" then
+if message == "blaze" then
 rs.setOutput(sides.back,15)
 
 elseif message == "2" then
