@@ -34,6 +34,14 @@ rs.setOutput(sides.left,0)
 rs.setOutput(sides.right,0)
 rs.setOutput(sides.back,0)
 
+elseif message == "on" then
+rs.setOutput(sides.front,15)
+rs.setOutput(sides.top,15)
+rs.setOutput(sides.bottom,15)
+rs.setOutput(sides.left,15)
+rs.setOutput(sides.right,15)
+rs.setOutput(sides.back,15)
+
 elseif message == "update" then
 os.execute("wget -f https://github.com/jaytherunaway/Opencomputers-programes/raw/main/spawner1")
 else
