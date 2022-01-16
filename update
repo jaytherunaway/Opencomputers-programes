@@ -3,6 +3,7 @@ os.execute("del Base")
 os.execute("del DC")
 os.execute("del CL")
 os.execute("del fix")
+os.execute("del BotChecker")
 os.sleep(3)
 os.execute("clear")
 
@@ -27,8 +28,7 @@ os.sleep(3)
 os.execute("clear")
 
 print("getting Bot Checker")
-print("No File")
---os.execute("wget ")
+os.execute("wget https://github.com/jaytherunaway/Opencomputers-programes/raw/main/BotChecker")
 os.sleep(3)
 os.execute("clear")
 
