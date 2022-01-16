@@ -1,1 +1,34 @@
+local component = require("component")
+local event = require("event")
+local m = component.modem -- get primary modem component
+local I = 1
+local Times = 0
+--CODE--
 
+os.execute("clear")
+print("-----------------")
+print("Bot Tracker 0.1")
+print("-----------------")
+while(I <= 2) do 
+
+m.open(123)
+local event = require("event")
+local _, _, _, _, _, message, bot = event.pull("modem_message")
+print(bot,message)
+Times = Times + 1
+m.close(123)
+if message == "clear" then
+os.execute("clear")
+print("-----------------")
+print("Bot Tracker 0.1")
+print("-----------------")
+
+if Times == 10 then
+os.execute("clear")
+Times = 0
+else
+
+end
+end
+end
+Print("Error")
