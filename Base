@@ -36,6 +36,10 @@ elseif message == "fix" then
 os.execute("clear")
 os.execute("fix")
 
+elseif message == "botchecker" then
+os.execute("clear")
+os.execute("BotChecker")
+
 else
 
 end
