@@ -22,10 +22,11 @@ os.execute("clear")
 print("-----------------")
 print("Bot Tracker 0.1")
 print("-----------------")
-
-if Times == 10 then
-os.execute("clear")
-Times = 0
+print("Messages Recived")
+print(Times)
+print("-----------------")
+if Times == 15 then
+os.execute("base")
 else
 
 end
