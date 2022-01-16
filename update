@@ -26,6 +26,12 @@ os.execute("wget https://github.com/jaytherunaway/Opencomputers-programes/raw/ma
 os.sleep(3)
 os.execute("clear")
 
+print("getting Bot Checker")
+print("No File")
+--os.execute("wget ")
+os.sleep(3)
+os.execute("clear")
+
 print("Updating...")
 os.sleep(5)
 os.execute("clear")
